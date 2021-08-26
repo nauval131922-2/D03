@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D03 Cinema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="menu">
+        <div class="logo"><h4>D03 Cinema</h4></div>
+        <div class="menu-toggle">
+          <input type="checkbox" name="" id="" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-list">
+          <li><a href="" class="movies">Movies</a></li>
+          <li><a href="" class="theatre">Theatre</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>Unlimited movies, TV<br>shows, and more.</h1>
+            <h3>Watch anywhere. Cancel anytime</h3>
+            <a href="#">Explore Now!</a>
+        </div>
+    </header>
+
+    <section class="main" id="main">
+        <div class="container">
+            <div class="heading">
+                <h4>Playing Now.</h4>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <img src="https://photos.hancinema.net/photos/fullsizephoto1339309.jpg"> 
+                    <div class="title">Hard Hit</div>
+                    <div class="genre">Thriller</div>
+                </div>
+                <div class="card">
+                    <img src="https://www.layar.id/wp-content/uploads/2021/07/th.jpg">
+                    <div class="title">Stillwater</div>
+                    <div class="genre">Thriller, Drama, Mystery, Crime</div>
+                </div>
+                <div class="card">
+                    <img src="https://beritasatu.my.id/wp-content/uploads/2021/07/Paramount-Luncurkan-Poster-Snake-Eyes-Terbaru-BeritaSatu.jpg">
+                    <div class="title">Snake Eyes</div>
+                    <div class="genre">Action, Sci-fi, Fantasy, Thriller, Superhero</div>
+                </div>
+                <div class="card">
+                    <img src="https://static.metacritic.com/images/products/movies/4/375c49d6cae081da3dc3998a1c56e3ca.jpg">
+                    <div class="title">Old</div>
+                    <div class="genre">Horror, Thriller, Drama, Mystery, Pychological Horror, Supernatural</div>
+                </div>
+                <div class="card">
+                    <img src="https://cinemags.co.id/wp-content/uploads/2021/04/Space-Jam-A-New-Legacy-Poster.jpg">
+                    <div class="title">Space Jam</div>
+                    <div class="genre">Animation, Sci-fi, Children, Fantasy, Comedy, Sports, Adventure</div>
+                </div>
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZWVkMmM4YzMtNWZkZS00ZTRlLTgxMjgtZjY0YzNlM2E3MDhlXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg">
+                    <div class="title">Peter Rabbit 2</div>
+                    <div class="genre">Comedy, Animated Cartoon, Adventure, Fantasy, Family</div>
+                </div>
+                <div class="card">
+                    <img src="https://pbs.twimg.com/media/D-H0qDWUcAIzrQy.jpg">
+                    <div class="title">Jakarta Vs Everybody</div>
+                    <div class="genre">Drama</div>
+                </div>
+                <div class="card">
+                    <img src="https://asset.kompas.com/crops/0lr1TyjGclU7hAHDsxDK6PED4B8=/0x6:877x590/750x500/data/photo/2021/06/25/60d56376b0c59.png">
+                    <div class="title">Escape Room</div>
+                    <div class="genre">Horror, Drama, Thriller, Psychological Thriller, Action, Sci-fi, Mystery, Adventure</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <section class="body">
+        <div class="container download">
+            <div class="texts">
+                <div class="logo">
+                    <h1>D03 Cinema</h1>
+                </div>
+                <p>Is now available on</p>
+                <p>Goole Play Store and App Store</p>
+            </div>
+            <button class="donwload-button">Download</button>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <footer>
+        <div class="heading">
+            <h2>D03 Cinema</h2>
+            <p>&copy;Copyright 2021.</p>
+        </div>
+    </footer>
+    
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle input")
+        const nav = document.querySelector("nav ul")
+
+        menuToggle.addEventListener("click", function () {
+            nav.classList.toggle("slide")
+        });
+
+        console.log("hello");
+
+        const nav2 = document.querySelector("nav");
+        window.onscroll = function(){
+            var top = window.scrollY;
+            console.log(top);
+            if(top >= 600){
+                nav2.classList.add("active")
+            } else {
+                nav2.classList.remove("active")
+            }
+        }
+    </script>
+</body>
+</html>
