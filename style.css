@@ -254,7 +254,7 @@ footer .heading,p {
 }
 
 .container.download{
-  background-image: url(/download-background.png);
+  background-image: url(https://www.linkpicture.com/q/download-background.png);
   background-size: cover;
   background-position: center;
   height: 580px;
